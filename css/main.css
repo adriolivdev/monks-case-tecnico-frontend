@@ -1,0 +1,725 @@
+/* ============================
+   RESET BÁSICO
+============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #EAE8E4;
+  color: #2D2D2D;
+  line-height: 1.5;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ============================
+   HEADER (MOBILE-FIRST)
+============================ */
+/* ============================
+   HERO BACKGROUND
+============================ */
+.hero-background {
+  background-color: #2D2D2D;
+  background-image: url('../assets/img/monks-bg.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  color: white;
+  overflow: hidden;
+}
+
+/* ============================
+   HEADER
+============================ */
+.site-header {
+  padding: 1rem; /* mobile */
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1rem; /* Alinhamento igual ao resto no mobile */
+}
+
+.logo-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* Espaço entre logo e menu */
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #EAE8E4;
+}
+
+.menu-mobile {
+  font-size: 2rem;
+  color: #EAE8E4;
+  cursor: pointer;
+}
+
+/* ============================
+   MENU CATEGORIAS
+============================ */
+.nav-categorias {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem 1rem;
+  background-color: #E5B7FF;
+  color: #2D2D2D;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.nav-categorias a {
+  color: #2D2D2D;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: border 0.2s ease;
+}
+
+.nav-categorias a:hover,
+.nav-categorias a.active {
+  border: 2px solid white;
+}
+
+.nav-categorias.active {
+  display: flex;
+}
+
+/* ============================
+   HERO SECTION
+============================ */
+.hero-section {
+  padding: 2rem 1rem; /* mobile */
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  padding-inline: 1rem; /* Alinhado à esquerda */
+  max-width: 100%;
+}
+
+.hero-text h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #EAE8E4;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+
+/* ============================
+   CARDS SECTION
+============================ */
+.cards-section {
+  background-color: #EAE8E4;
+  padding: 3rem 1rem;
+  text-align: left;
+}
+
+.cards-section h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2D2D2D;
+  margin-bottom: 0.5rem;
+}
+
+.cards-section > p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.cards-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.card h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0.8rem 1rem 0.3rem;
+  color: #2D2D2D;
+  text-align: left;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0 1rem 1rem;
+  text-align: left;
+}
+
+/* ============================
+   GRADE DE IMAGENS
+============================ */
+.image-grid-section {
+  background-color: #EAE8E4;
+  padding: 3rem 1rem;
+  color: #2D2D2D;
+}
+
+.image-grid-section h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.image-grid-section p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+  display: block;
+}
+
+.image-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ============================
+   DOWNLOAD SECTION
+============================ */
+ .app-download {
+    width: 312px;
+    height: 394.01px;
+    background-color: #3C0C60;
+    border-radius: 24px;
+    padding: 24px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+    box-sizing: border-box;
+    color: #EAE8E4;
+  }
+
+  .app-download .download-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .app-download h2 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .app-download p {
+    font-size: 0.88rem;
+    margin: 0;
+    line-height: 1.4;
+    color: #EAE8E4;
+  }
+
+  .app-download .store-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .app-download .store-buttons img {
+    width: 100%;
+    max-width: 264px;
+    display: block;
+  }
+
+
+/* ============================
+   TAGS DE CATEGORIAS
+============================ */
+.categorias-tags {
+  background-color: #EAE8E4;
+  padding: 2rem 1rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tags span {
+  background-color: #DFDCD5;
+  color: #7D26C9;
+  border: 1px solid #7D26C9;
+  border-radius: 32px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+/* ============================
+   CTA CARDS
+============================ */
+.cta-cards {
+  background-color: #EAE8E4;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cta {
+  background-color: white;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  box-shadow: 0 0 8px rgba(125, 38, 201, 0.3);
+}
+
+.cta button {
+  background-color: #DFBBFE;
+  color: #2D2D2D;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* ============================
+   FORMULÁRIO
+============================ */
+.formulario {
+  background-color: #EAE8E4;
+  padding: 2rem 1rem;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.captcha {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#captchaMsg {
+  font-weight: bold;
+}
+
+/* ============================
+   FOOTER
+============================ */
+footer {
+  background-color: #2D2D2D;
+  color: #EAE8E4;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+footer nav {
+  margin-top: 1rem;
+}
+
+footer nav a {
+  color: #EAE8E4;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+/* ============================
+   MEDIA QUERIES - DESKTOP
+============================ */
+@media (min-width: 1024px) {
+  /* PADRÃO GERAL */
+  .site-header,
+  .hero-section,
+  .cards-section {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #2D2D2D;
+  }
+
+  .logo {
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: #EAE8E4;
+    
+  }
+
+  .menu-mobile {
+    display: none;
+  }
+
+  .nav-categorias {
+    display: flex !important;
+    flex-direction: row;
+    gap: 2rem;
+    position: static;
+    background: none;
+    padding: 0;
+    color: #EAE8E4;
+    align-items: center;
+  }
+
+  .nav-categorias a {
+    font-size: 1rem;
+    color: #EAE8E4;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .nav-categorias a:hover,
+  .nav-categorias a.active {
+    border-bottom: 2px solid white;
+    border-radius: 0;
+  }
+
+  .hero-background {
+    background-color: #2D2D2D;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    border-bottom-left-radius: 65px;
+    border-bottom-right-radius: 65px;
+    background-image: url('../assets/img/monks-bg.png'); /* imagem lateral direita */
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+  }
+
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero-text {
+    max-width: 50%;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #EAE8E4;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+    color: #cfcfcf;
+    line-height: 1.6;
+  }
+
+  .scroll-indicator {
+    margin-top: 2rem;
+    width: 60px;
+  }
+
+  .hero-image img {
+    max-width: 400px;
+    height: auto;
+  }
+
+  /* CARDS */
+  .cards-grid {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 260px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    background: white;
+    transition: transform 0.2s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+  }
+
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.8rem 1rem 0.3rem;
+    color: #2D2D2D;
+    text-align: left;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0 1rem 1rem;
+    text-align: left;
+  }
+}
+/* ============================
+   GRADE DE IMAGENS - DESKTOP
+============================ */
+@media (min-width: 1024px) {
+  .image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+    grid-template-areas:
+      "text img1"
+      "imgLarge img2";
+  }
+
+  .image-text {
+    grid-area: text;
+    padding-right: 2rem;
+  }
+
+  .image-img1 {
+    grid-area: img1;
+  }
+
+ .image-large {
+  grid-area: imgLarge;
+  margin-top: -13rem; /* Sobe a imagem */
+}
+
+  .image-img2 {
+    grid-area: img2;
+  }
+
+  .image-img1 img,
+  .image-img2 img {
+    height: 346.5px;
+    width: 591px;
+  }
+
+  .image-large img {
+    height: 100%;
+  }
+}
+
+/* ============================
+   DOWNLOAD SECTION - DESKTOP==*/
+
+   @media (min-width: 1024px) {
+  .app-download {
+    width: 100%;
+    max-width: 1150px;
+    height: auto;
+    background-color: #3C0C60;
+    color: #EAE8E4;
+    border-radius: 2rem;
+    padding: 2.5rem 3rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .app-download .download-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 1rem;
+  }
+
+  .app-download h2 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .app-download p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 700px;
+  }
+
+  .app-download .store-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
+    width: auto;
+  }
+
+  .app-download .store-buttons a img {
+    width: 180px;
+    height: auto;
+    display: block;
+  }
+}
+
+/* ============================
+   TAGS DE CATEGORIAS - DESKTOP ===*/
+   @media (min-width: 1024px) {
+  .categorias-tags {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .categorias-tags h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    justify-content: center;
+  }
+
+  .tags span {
+    background-color: #EAE8E4;
+    color: #7D26C9;
+    border: 2px solid #7D26C9;
+    padding: 0.5rem 1.2rem;
+    border-radius: 999px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.3s ease;
+  }
+
+  .tags span:hover {
+    background-color: #DFBBFE;
+    cursor: pointer;
+  }
+}
+
+/* ============================
+   CTA CARDS - DESKTOP===*/
+   @media (min-width: 1024px) {
+  .cta-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 2rem;
+  }
+
+  .cta {
+    flex: 1;
+    max-width: 350px;
+    background-color: white;
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(125, 38, 201, 0.3);
+    border: 2px solid #DFBBFE;
+  }
+
+  .cta h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #2D2D2D;
+    text-align: left;
+  }
+
+  .cta p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  .cta button {
+    background-color: #DFBBFE;
+    color: #2D2D2D;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: 0.3s ease;
+  }
+
+  .cta button:hover {
+    background-color: #CFA8F2;
+    cursor: pointer;
+  }
+}
