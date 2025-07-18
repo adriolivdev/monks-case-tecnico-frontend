@@ -173,40 +173,58 @@
     </section>
 
     <!-- ========== FORMULÁRIO ========== -->
-    <section class="formulario wrapper">
-      <h2>Lorem ipsum dolor sit amet consectetur</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus
-        sit scelerisque
-      </p>
-      <form id="form">
-        <input type="text" placeholder="Categoria*" required />
-        <input type="text" placeholder="Categoria" />
-        <input type="text" placeholder="Categoria*" required />
-        <input type="text" placeholder="Categoria" />
-        <div class="captcha">
-          <span id="num1">427</span> + <span id="num2">628</span> =
-          <input
-            type="number"
-            id="captchaInput"
-            placeholder="Resultado*"
-            required
+    <section class="formulario">
+      <div class="formulario-content">
+        <!-- Imagem lateral esquerda -->
+        <div class="form-image">
+          <img
+            src="assets/icons/forms-image.png"
+            alt="Ilustração do formulário"
           />
         </div>
-        <button type="submit">Lorem ipsum</button>
-        <p id="captchaMsg"></p>
-      </form>
+
+        <!-- Container do formulário -->
+        <div class="form-container">
+          <h2>Lorem ipsum dolor sit amet consectetur</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing
+            faucibus sit scelerisque
+          </p>
+          <form id="form">
+            <div class="input-group">
+              <input type="text" placeholder="Categoria*" required />
+              <input type="text" placeholder="Categoria*" required />
+              <input type="text" placeholder="Categoria" />
+              <input type="text" placeholder="Categoria" />
+            </div>
+            <div class="captcha">
+              <span id="num1">427</span> + <span id="num2">628</span> =
+              <input
+                type="number"
+                id="captchaInput"
+                placeholder="Resultado*"
+                required
+              />
+            </div>
+            <button type="submit">Lorem ipsum</button>
+            <p id="captchaMsg"></p>
+          </form>
+        </div>
+      </div>
     </section>
+    
 
     <!-- ========== FOOTER ========== -->
-    <footer class="wrapper">
+    <footer class="footer">
       <div class="social-icons">
-        <a href="#"><img src="assets/icons/whatsapp.svg" /></a>
-        <a href="#"><img src="assets/icons/twitter.svg" /></a>
-        <a href="#"><img src="assets/icons/facebook.svg" /></a>
+        <a href="#"><img src="assets/icons/2.png" alt="Instagram" /></a>
+        <a href="#"><img src="assets/icons/3.png" alt="WhatsApp" /></a>
+        <a href="#"><img src="assets/icons/4.png" alt="Twitter" /></a>
+        <a href="#"><img src="assets/icons/5.png" alt="Facebook" /></a>
       </div>
-      <p>Lorem ipsum dolor sit amet</p>
-      <nav>
+      <p class="footer-title">Lorem ipsum dolor sit amet</p>
+      <nav class="footer-links">
+        <a href="#">Lorem ipsum</a>
         <a href="#">Lorem ipsum</a>
         <a href="#">Lorem ipsum</a>
         <a href="#">Lorem ipsum</a>

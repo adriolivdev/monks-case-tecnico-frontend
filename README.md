@@ -1,76 +1,48 @@
-#  Monks Landing Page
+# .monks - Case Técnico Frontend
 
-Este é um projeto de landing page responsiva que desenvolvi com HTML, CSS e JavaScript puro, focando em boas práticas de layout responsivo, estrutura modular de componentes e fidelidade visual com base em um mockup do Figma.
+Este repositório contém o projeto que desenvolvi como parte do case técnico para a vaga de estágio em desenvolvimento web na Monks.
 
-## 🎯 Objetivo
+## 🧠 Sobre o desafio
 
-Criei esta landing page como parte de um processo seletivo para estágio em desenvolvimento front-end. O desafio era entregar uma versão fiel ao mockup, com atenção ao comportamento mobile-first e à responsividade para desktop, garantindo uma boa organização de pastas e código.
+O objetivo era criar uma landing page responsiva baseada em um mockup de alta fidelidade. A proposta incluía múltiplas seções com componentes visuais ricos, responsividade mobile-first, interações em JavaScript e uma forte atenção ao layout e à estética do projeto.
 
-## 📁 Estrutura do Projeto
+## 💡 Meu processo
 
-MONKS-LANDING-PAGE/
-├── assets/
-│ ├── icons/ → Ícones da landing page
-│ └── img/ → Imagens e mockups utilizados (como bg, botões etc.)
-├── css/
-│ └── main.css → Todo o estilo da página, mobile-first com media queries
-├── js/
-│ └── main.js → Interações simples como o menu mobile
-├── index.html → Estrutura principal da landing
-└── README.md → Este arquivo que você está lendo agora :)
+Desde o início, me dediquei muito para que a estrutura visual e o comportamento da página ficassem **o mais fiel possível ao layout proposto**. Eu revisei cada detalhe com cuidado — desde espaçamentos, fontes, alinhamentos e cores até o comportamento em diferentes breakpoints.
 
-markdown
-Copiar
-Editar
+Além disso, me desafiei a escrever um código **limpo, semântico e modularizado**, utilizando práticas modernas de HTML5, CSS3 (com media queries mobile-first) e JavaScript puro.
 
-## 🧩 Componentes e Seções
+## 🛠️ Tecnologias utilizadas
 
-### ✅ Header
-- Com logo `.monks` e menu mobile com menu hamburguer.
-- Categorias exibidas horizontalmente no desktop.
+- HTML5
+- CSS3 (com media queries para responsividade)
+- JavaScript (vanilla)
+- Figma (para leitura do layout)
+- Git e GitHub (controle de versão)
 
-### 🎯 Hero Section
-- Imagem de fundo aplicada via CSS.
-- Título e parágrafo com estilo dark/light.
-- Layout ajustado para mobile e desktop, com bordas arredondadas no desktop.
+## 🚀 Funcionalidades implementadas
 
-### 🃏 Cards
-- Cards informativos com imagem, título e descrição.
-- Dispostos em grid no desktop e coluna no mobile.
+- Layout 100% responsivo (mobile-first)
+- Menu hamburguer funcional
+- Captcha simples com verificação por soma no formulário
+- Seções reutilizáveis com organização clara e modular
+- Estilização baseada 100% na paleta de cores e tipografia do mockup
+- Elementos visuais como botões, cards e tags estilizados conforme o layout original
 
-### 🖼️ Grid de Imagens
-- Layout com imagens distribuídas em grid no desktop e coluna no mobile.
-- Com texto lateral.
+## ⚔️ Desafios superados
 
-### 📲 Seção de Download
-- Card roxo com título, descrição e botões da App Store e Google Play.
-- Layout lateral no desktop e empilhado no mobile.
+Mesmo com o prazo apertado, me esforcei ao máximo para entregar algo que estivesse à altura da proposta. Os principais desafios incluíram:
 
-### 🏷️ Tags de Categoria
-- Vários botões circulares representando categorias, com cores violetas.
-- Comportamento flexível com quebra de linha.
+- Reproduzir fielmente o layout do mockup mesmo sem acesso direto ao Figma editável
+- Ajustar os detalhes de responsividade com foco em fidelidade visual
+- Criar interações funcionais com JavaScript puro (sem frameworks)
+- Ajustar imagens, grid, espaçamentos e alinhamentos em todos os breakpoints
 
-### 📌 CTA Cards
-- Três cards com título, texto e botão centralizado.
-- Botão com fundo lavanda e borda-radius de 4px.
+## 📎 Link do projeto
 
-## 📱 Responsividade
+🔗 [Repositório no GitHub](https://github.com/adriolivdev/monks-case-tecnico-frontend)
 
-- Desenvolvi com abordagem **mobile-first**.
-- Usei `@media (min-width: 1024px)` para layout em desktop.
-- Todos os elementos se adaptam de forma fluida à largura da tela.
+## 🙋‍♀️ Considerações finais
 
-## 🎨 Cores & Estilo
+Fico muito feliz com o resultado que alcancei neste projeto. Sei que ainda há muito a aprender e evoluir, mas me orgulho do quanto me esforcei para entregar um case sólido, funcional e visualmente consistente. Obrigada pela oportunidade de participar do processo seletivo!
 
-- Baseado na paleta do mockup:
-  - **Fundo geral**: `#EAE8E4`
-  - **Roxo escuro**: `#3C0C60`
-  - **Lavanda claro**: `#DFBBFE`
-  - **Texto escuro**: `#2D2D2D`
-  - **Contraste para botões**: branco, roxo, lavanda
-
-## 🧠 Aprendizados
-
-- Trabalhei bastante o alinhamento visual entre mobile e desktop.
-- Aprendi a organizar melhor minhas seções e aplicar boas práticas com `flexbox` e `grid`.
-- Evoluí no uso de variáveis, media queries e responsividade com elegância.
