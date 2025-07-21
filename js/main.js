@@ -24,7 +24,6 @@ document.getElementById("form").addEventListener("submit", function (event) {
   if (resultado === num1 + num2) {
     msg.textContent = "✔ Captcha verificado com sucesso!";
     msg.style.color = "green";
-
   } else {
     msg.textContent = "❌ Resultado incorreto. Tente novamente.";
     msg.style.color = "red";
@@ -32,4 +31,18 @@ document.getElementById("form").addEventListener("submit", function (event) {
 });
 
 // Gera o captcha ao carregar a página
-window.addEventListener("DOMContentLoaded", gerarCaptcha);
+window.addEventListener("DOMContentLoaded", () => {
+  gerarCaptcha();
+
+  // ======================
+  // Menu Hamburguer
+  // ======================
+  const hamburger = document.getElementById("hamburger");
+  const navCategorias = document.getElementById("menuCategorias");
+
+  if (hamburger && navCategorias) {
+    hamburger.addEventListener("click", () => {
+      navCategorias.classList.toggle("active");
+    });
+  }
+});
