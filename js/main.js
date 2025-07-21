@@ -25,8 +25,6 @@ document.getElementById("form").addEventListener("submit", function (event) {
     msg.textContent = "✔ Captcha verificado com sucesso!";
     msg.style.color = "green";
 
-    // Aqui você pode enviar o formulário ou redirecionar
-    // this.submit(); // descomente se quiser enviar de verdade
   } else {
     msg.textContent = "❌ Resultado incorreto. Tente novamente.";
     msg.style.color = "red";

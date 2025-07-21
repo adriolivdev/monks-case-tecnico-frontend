@@ -1,48 +1,52 @@
-# .monks - Case Técnico Frontend
+# .monks – Case Técnico Frontend
 
 Este repositório contém o projeto que desenvolvi como parte do case técnico para a vaga de estágio em desenvolvimento web na Monks.
 
 ## 🧠 Sobre o desafio
 
-O objetivo era criar uma landing page responsiva baseada em um mockup de alta fidelidade. A proposta incluía múltiplas seções com componentes visuais ricos, responsividade mobile-first, interações em JavaScript e uma forte atenção ao layout e à estética do projeto.
+O objetivo era criar uma landing page responsiva baseada em um mockup de alta fidelidade, com várias seções visuais, foco em responsividade mobile-first e interações em JavaScript.
 
 ## 💡 Meu processo
 
-Desde o início, me dediquei muito para que a estrutura visual e o comportamento da página ficassem **o mais fiel possível ao layout proposto**. Eu revisei cada detalhe com cuidado — desde espaçamentos, fontes, alinhamentos e cores até o comportamento em diferentes breakpoints.
+Me dediquei com tudo que sei até agora pra entregar a melhor versão possível dentro do prazo. Cuidei dos detalhes do layout, como espaçamentos, cores, fontes e responsividade, pra ficar **o mais próximo possível do design original**.
 
-Além disso, me desafiei a escrever um código **limpo, semântico e modularizado**, utilizando práticas modernas de HTML5, CSS3 (com media queries mobile-first) e JavaScript puro.
+Também me desafiei a escrever um código limpo, organizado e semântico, usando apenas **HTML5, CSS3 e JavaScript puro**.
 
 ## 🛠️ Tecnologias utilizadas
 
 - HTML5
-- CSS3 (com media queries para responsividade)
+- CSS3 (com media queries mobile-first)
 - JavaScript (vanilla)
-- Figma (para leitura do layout)
-- Git e GitHub (controle de versão)
+- Git e GitHub
+- Figma (para leitura do mockup)
 
-## 🚀 Funcionalidades implementadas
+## 🚀 Funcionalidades
 
-- Layout 100% responsivo (mobile-first)
-- Menu hamburguer funcional
-- Captcha simples com verificação por soma no formulário
-- Seções reutilizáveis com organização clara e modular
-- Estilização baseada 100% na paleta de cores e tipografia do mockup
-- Elementos visuais como botões, cards e tags estilizados conforme o layout original
+- Página 100% responsiva
+- Menu hamburguer funcional no mobile
+- Captcha com verificação por soma no formulário
+- Seções reutilizáveis e organizadas
+- Estilo fiel à identidade visual proposta
 
 ## ⚔️ Desafios superados
 
-Mesmo com o prazo apertado, me esforcei ao máximo para entregar algo que estivesse à altura da proposta. Os principais desafios incluíram:
+Mesmo com algumas limitações, me esforcei ao máximo pra resolver:
 
-- Reproduzir fielmente o layout do mockup mesmo sem acesso direto ao Figma editável
-- Ajustar os detalhes de responsividade com foco em fidelidade visual
-- Criar interações funcionais com JavaScript puro (sem frameworks)
-- Ajustar imagens, grid, espaçamentos e alinhamentos em todos os breakpoints
+- Responsividade em múltiplos tamanhos de tela
+- Fidelidade visual ao arquivo do Figma
+- Interações com JavaScript puro (sem frameworks)
+- Ajuste fino de layout, imagens e espaçamentos
 
-## 📎 Link do projeto
+## 🔗 Projeto online
 
-🔗 [Repositório no GitHub](https://github.com/adriolivdev/monks-case-tecnico-frontend)
+Você pode visualizar o projeto publicado aqui:
+
+👉 [monks-case-tecnico-frontend.vercel.app](https://monks-case-tecnico-frontend.vercel.app)
+
+## 📎 Repositório no GitHub
+
+🔗 [github.com/adriolivdev/monks-case-tecnico-frontend](https://github.com/adriolivdev/monks-case-tecnico-frontend)
 
 ## 🙋‍♀️ Considerações finais
 
-Fico muito feliz com o resultado que alcancei neste projeto. Sei que ainda há muito a aprender e evoluir, mas me orgulho do quanto me esforcei para entregar um case sólido, funcional e visualmente consistente. Obrigada pela oportunidade de participar do processo seletivo!
-
+Esse projeto foi um grande aprendizado. Sei que ainda tenho muito a evoluir, mas dei o meu melhor com o que sei hoje e fiquei feliz com o resultado final. Obrigada pela oportunidade de mostrar um pouco do meu trabalho!
